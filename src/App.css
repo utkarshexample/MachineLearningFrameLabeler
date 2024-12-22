@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add outline and make the inside translucent when dragging */
+.dragging {
+  border: 2px dashed red; /* Create a visible outline around the element */
+  background-color: rgba(255, 0, 0, 0.1); /* Translucent background */
+  opacity: 0.8; /* Optional: Reduce opacity for a more translucent effect */
+  cursor: move; /* Change cursor to indicate drag */
+}
+
+/* Optional: For hover effect */
+#draggable:hover {
+  border: 2px solid rgba(0, 0, 255, 0.5); /* Border changes on hover for better UX */
+}
+
+.customContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.customLabelInput {
+  margin-right: 5px;
+}
